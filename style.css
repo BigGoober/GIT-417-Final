@@ -39,6 +39,12 @@ h2 {
 img {
     width: 500px;
 }
+#main-img img{
+    width: 1280px;
+    margin-left: -8px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
 h2 {
     text-align: center;
 }
@@ -48,8 +54,17 @@ p {
 h3 {
     text-align: center;
 }
-section img {
-    margin-left: 400px;
+.products {
+    background-color: #7CC6F2;
+    padding-bottom: 50px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.products img {
+    margin-left: 180px;
 }
 form {
     width: 400px;
@@ -66,4 +81,20 @@ input[type=text], input[type=email], input[type=password], input[type=number] {
     border: 1px solid #aaa;
     border-radius: 4px;
     box-sizing: border-box;
+}
+input[type=submit] {
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 200px;
+}
+#radio {
+    border: 1px solid #aaa;
+    height: 40px;
+    margin-top: 10px
+}
+#radio label{
+    margin-left: 80px;
+}
+#radio input{
+    margin-top: 12px;
 }
