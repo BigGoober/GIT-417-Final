@@ -2,19 +2,53 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html {
-    background-color: white;
+    background-color: #7CC6F2;
     width: 1280px;
 }
 .hidden {
     display: none;
 }
-nav {
-    margin-right: auto;
-    margin-left: 10px;
+.dark {
+    background-color: #003087;
+    color: white;
 }
-ul {
-    list-style-type: none;
-    display: flex;
+html.dark li a {
+    color: white;
+}
+#products.dark {
+    color: black;
+}
+nav {
+    margin-top: -20px;
+    margin-right: -8px;
+    margin-left: -8px;
+    margin-bottom: -10px;
+    background-color: #7CC6F2;
+}
+nav button {
+    width: 40px;
+    height: 40px;
+    margin-top: -5px;
+    background-color: #003087;
+    border-radius: 50%;
+}
+nav button:hover {
+    background-color: #7CC6F2;
+}
+html.dark nav button:hover {
+    background-color: #003087;
+}
+nav button img{
+    width: 40px;
+    margin-left: -7px;
+    margin-top: -3px;
+}
+html.dark nav button {
+    background-color: #7CC6F2;
+}
+nav ul {
+    list-style-type: none; 
+    display: flex; 
 }
 li {
     margin: 50px;
@@ -36,6 +70,9 @@ h2 {
     margin-left: auto;
     margin-right: auto;
 }
+#products h2 {
+    color: black;
+}
 img {
     width: 500px;
 }
@@ -43,7 +80,6 @@ img {
     width: 1280px;
     margin-left: -8px;
     margin-top: -50px;
-    margin-bottom: 50px;
 }
 h2 {
     text-align: center;
@@ -54,8 +90,8 @@ p {
 h3 {
     text-align: center;
 }
-.products {
-    background-color: #7CC6F2;
+#products {
+    background-color: white;
     padding-bottom: 50px;
     padding-top: 5px;
     padding-right: 5px;
@@ -63,12 +99,78 @@ h3 {
     margin-left: 200px;
     margin-right: 200px;
 }
-.products img {
+#products p {
+    width: 800px;
+    margin-left: 22px;
+    color: black;
+}
+#products img {
     margin-left: 180px;
+}
+#buttons img{
+    width: 150px;
+    margin-left: 0px;
+}
+#buttons {
+    margin-left: 120px;
+    margin-top: 50px;
+}
+#buttons button {
+    margin-left: 25px;
+    background-color: #7CC6F2;
+    border-color: #003087;
+}
+#buttons button:hover {
+    background-color: #003087;
+}
+#bottom-half {
+    display: flex;
+}
+#contest {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 0px;
+    border: 3px solid #003087;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+html.dark #contest {
+    border: 3px solid #7CC6F2;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.contest form {
+    margin-left: 100px;
+    margin-top: 0px;
+    width: 600px;
+}
+.contest img {
+    margin-left: 120px;
+    width: 400px;
+}
+.contest p {
+    width: 500px;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+#contest h2 {
+    margin-left: -20px;
+}
+#contest input {
+    width: 100px;
+}
+#contest input[type=submit] {
+    width: 100px;
+    margin-left: 20px;
+}
+#contact h2 {
+    margin-top: 80px;
+    margin-left: 80px;
 }
 form {
     width: 400px;
-    margin-left: 440px;
+    margin-left: 80px;
+    margin-top: 100px;
 }
 label {
     margin-left: 20px;
@@ -78,7 +180,7 @@ input[type=text], input[type=email], input[type=password], input[type=number] {
     padding: 8px;
     margin-top: 4px;
     margin-bottom: 12px;
-    border: 1px solid #aaa;
+    border: 1px solid #003087;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -88,13 +190,49 @@ input[type=submit] {
     width: 200px;
 }
 #radio {
-    border: 1px solid #aaa;
+    border: 1px solid #003087;
     height: 40px;
-    margin-top: 10px
+    margin-top: 10px;
 }
 #radio label{
     margin-left: 80px;
 }
 #radio input{
     margin-top: 12px;
+}
+#about p {
+    width: 800px;
+    margin-left: 230px;
+    margin-bottom: 40px;
+}
+footer {
+    background-color: #003087;
+    margin-bottom: -12px;
+    margin-left: -12px;
+    margin-right: -8px;
+    padding-bottom: 50px;
+}
+footer p {
+    color: white;
+    margin-top: 50px;
+}
+html.dark footer {
+    background-color: #7CC6F2;
+}
+html.dark footer p {
+    color: black;
+}
+input.error  {
+    border: 3px solid red;
+}
+#formErrors {
+    color: red;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    border: 2px solid red;
+}
+#formErrors li {
+    list-style-type: circle;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
